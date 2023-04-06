@@ -1,6 +1,0 @@
-PROJECT(LiveFaceReco)
-
-set(realtimeVideoCapture_SRCS realtime_video_capture.cpp)
-set(realtimeVideoCapture_INCLUDES realtime_video_capture.hpp)
-
-ADD_LIBRARY(realtimeVideoCapture realtime_video_capture.cpp realtime_video_capture.hpp)
