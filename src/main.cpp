@@ -1,5 +1,5 @@
 //
-// Created by Xinghao Chen 2020/7/27
+//
 //
 #include "livefacereco.hpp"
 #include <stdio.h>
