@@ -1,5 +1,5 @@
 #include "arcface.h"
-//#include "livefacereco.hpp"
+
 //这段代码是关于人脸识别中计算两张人脸特征向量之间的余弦相似度（cosine similarity）的。
 ncnn::Mat bgr2rgb(ncnn::Mat src)
 {

@@ -1,4 +1,4 @@
-#include "realtime_face_detection.hpp"
+#include "livefacereco.hpp"
 #include <stdio.h>
 #include <iostream>
 

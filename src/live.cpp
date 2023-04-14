@@ -2,11 +2,9 @@
 #include <opencv2/imgproc.hpp>
 #include "live.h"
 #include "livefacereco.hpp"
-//#include<ctime>
-//#include <iostream>
+
 using namespace std;
 Live::Live() {
-    // 初始化Live对象
     thread_num_ = 2;
     option_.lightmode = true;
     option_.num_threads = thread_num_;
@@ -21,7 +19,6 @@ Live::~Live() {
 }
 
 void Live::LoadModel(std::vector<ModelConfig> &configs) {
-    // 加载模型
     configs_ = configs;
     clock_t start,finish;
     //start=clock();
@@ -39,7 +36,6 @@ void Live::LoadModel(std::vector<ModelConfig> &configs) {
 }
 
 float Live::Detect(cv::Mat &src, LiveFaceBox &box) {
-    // 检测人脸是否活体
     float confidence = 0.f;//score
       clock_t start,finsih;
     

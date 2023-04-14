@@ -1,4 +1,6 @@
-
+//
+// Created by Jack Yu on 23/03/2018.
+//
 
 #ifndef FACE_DEMO_FACEPREPROCESS_H
 #define FACE_DEMO_FACEPREPROCESS_H
@@ -70,7 +72,14 @@ namespace FacePreprocess {
 
     }
 
-
+//    References
+//    ----------
+//    .. [1] "Least-squares estimation of transformation parameters between two
+//    point patterns", Shinji Umeyama, PAMI 1991, DOI: 10.1109/34.88573
+//
+//    """
+//
+//    Anthor:Jack Yu
     cv::Mat similarTransform(cv::Mat src,cv::Mat dst) {
         int num = src.rows;
         int dim = src.cols;
