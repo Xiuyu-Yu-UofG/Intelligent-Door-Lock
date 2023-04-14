@@ -15,7 +15,7 @@ float calcSimilar(std::vector<float> feature1, std::vector<float> feature2);
 
 
 class Arcface {
-const string project_path="/home/pi/LiveFaceReco_RaspberryPi";
+const string project_path="/home/pi/Intelligent-Door-Lock";
 
 public:
     Arcface(string model_folder = ".");
