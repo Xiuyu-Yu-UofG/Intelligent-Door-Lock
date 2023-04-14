@@ -1,7 +1,3 @@
-//
-// Created by yuanhao on 20-6-12.
-//
-
 #ifndef LIVE_H
 #define LIVE_H
 #include <opencv2/core/mat.hpp>

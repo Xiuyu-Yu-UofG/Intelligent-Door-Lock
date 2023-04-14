@@ -1,6 +1,3 @@
-//
-//
-//
 #include "livefacereco.hpp"
 #include <stdio.h>
 #include <iostream>

@@ -1,11 +1,8 @@
-//
-// Created by yuanhao on 20-6-12.
-//
+
 #include <opencv2/imgproc.hpp>
 #include "live.h"
 #include "livefacereco.hpp"
-//#include<ctime>
-//#include <iostream>
+
 using namespace std;
 Live::Live() {
     thread_num_ = 2;
