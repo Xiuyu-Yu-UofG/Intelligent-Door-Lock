@@ -30,7 +30,7 @@ const int input_width = 640;
 const int input_height = 480;
 const int output_width = 640;
 const int output_height = 480;
-const string project_path="/home/pi/LiveFaceReco_RaspberryPi";
+const string project_path="/home/pi/Intelligent-Door-Lock";
 //end
 
 const cv::Size frame_size = Size(output_width,output_height);
