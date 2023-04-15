@@ -1,0 +1,4 @@
+/home/pi/Intelligent-Door-Lock/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Intelligent-Door-Lock/build/CMakeFiles/Intelligent-Door-Lock.dir
+/home/pi/Intelligent-Door-Lock/build/CMakeFiles/edit_cache.dir
+/home/pi/Intelligent-Door-Lock/build/CMakeFiles/Intelligent-Door-Lock_autogen.dir
