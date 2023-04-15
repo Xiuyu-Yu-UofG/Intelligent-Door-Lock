@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ELock)
+project(Intelligent-Door-Lock)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -36,5 +36,5 @@ set(PROJECT_SOURCES
          src/math.hpp
          src/parallel_video_capture.hpp
 )
-add_executable(ELock ${PROJECT_SOURCES})
+add_executable(Intelligent-Door-Lock ${PROJECT_SOURCES})
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${OpenCV_LIBS} ${Qt5Widgets_LIBRARIES} ncnn pthread -lstdc++fs ${WIRINGPI_LIBRARIES} gomp)

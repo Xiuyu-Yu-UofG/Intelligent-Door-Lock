@@ -3,8 +3,8 @@
 #include <opencv2/opencv.hpp>
 #include<wiringPi.h>
 
-#define LOCK_PIN 23
-#define ALERT_PIN 24
+#define LOCK_PIN 13
+#define ALERT_PIN 19
 Welcome::Welcome(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Welcome)
@@ -39,7 +39,7 @@ Welcome::~Welcome()
 
 void Welcome::displaySavedImg(QListWidgetItem *item)
 {
-    ui->label_delete->setPixmap(QPixmap("/home/pi/Elock/img/"+item->data(123).toString()).scaled(640,480));
+    ui->label_delete->setPixmap(QPixmap("/home/pi/Intelligent-Door-Lock/img/"+item->data(123).toString()).scaled(640,480));
 }
 
 void Welcome::check_function(int func_index)
@@ -81,7 +81,7 @@ void Welcome::lock_now()
 
 void Welcome::updateSavedImgs()
 {
-        QDir dir("/home/pi/Elock/img/");
+        QDir dir("/home/pi/Intelligent-Door-Lock/img/");
         ui->listWidget->clear();
         foreach(const QString & file_name,dir.entryList(QDir::Files))
         {
@@ -108,8 +108,6 @@ void Welcome::check_camera_thread()
       ui->tabWidget->setTabEnabled(3,true);
       std::cout<<"unlocked by face"<<std::endl;
       digitalWrite(LOCK_PIN,HIGH);
-      std::this_thread::sleep_for(std::chrono::milliseconds(500));
-      digitalWrite(LOCK_PIN,LOW);
       digitalWrite(ALERT_PIN,LOW);
    }
    else if(lock_ret==ALERT)
@@ -180,7 +178,7 @@ void Welcome::start_new()
 
 void Welcome::start_delete()
 {
-    QString del_cmd="rm /home/pi/Elock/img/"+ui->listWidget->currentItem()->data(123).toString();
+    QString del_cmd="rm /home/pi/Intelligent-Door-Lock/img/"+ui->listWidget->currentItem()->data(123).toString();
     system(del_cmd.toStdString().c_str());
     updateSavedImgs();
     ui->label_delete->setPixmap(QPixmap("res/lock.png"));

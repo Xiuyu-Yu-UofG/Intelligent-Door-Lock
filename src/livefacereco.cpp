@@ -12,7 +12,7 @@ using namespace std;
 
 double sum_score, sum_fps,sum_confidence;
 
-#define  PROJECT_PATH "/home/pi/Elock";
+#define  PROJECT_PATH "/home/pi/Intelligent-Door-Lock";
 
 std::vector<std::string> split(const std::string& s, char seperator)
 {
@@ -274,12 +274,12 @@ QImage cvMat2QImage(const cv::Mat &mat)
     switch(mat.type())
     {
     case CV_8UC1:
-        // QImage构造：数据，宽度，高度，每行多少字节，存储结构
+        // QImage structure：data，width，height，bit，structure
         image = QImage((const unsigned char*)mat.data, mat.cols, mat.rows, mat.step, QImage::Format_Grayscale8);
         break;
     case CV_8UC3:
         image = QImage((const unsigned char*)mat.data, mat.cols, mat.rows, mat.step, QImage::Format_RGB888);
-        image = image.rgbSwapped(); // BRG转为RGB
+        image = image.rgbSwapped(); // BRG to RGB
         break;
     case CV_8UC4:
         image = QImage((const unsigned char*)mat.data, mat.cols, mat.rows, mat.step, QImage::Format_ARGB32);

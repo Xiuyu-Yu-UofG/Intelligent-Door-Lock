@@ -1,7 +1,4 @@
-﻿//
-// Created by Xinghao Chen 2020/7/27
-//
-#include <iostream>
+﻿#include <iostream>
 #include <stdio.h>
 #include "stdlib.h"
 #include <iostream>
@@ -35,7 +32,7 @@ const int input_width = 320;
 const int input_height = 240;
 const int output_width = 320;
 const int output_height = 240;
-const string project_path="/home/pi/Elock";
+const string project_path="/home/pi/Intelligent-Door-Lock";
 //end
 
 const cv::Size frame_size = Size(output_width,output_height);
