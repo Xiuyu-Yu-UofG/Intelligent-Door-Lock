@@ -29,12 +29,13 @@ namespace Statistics
     /**
     * This module is using to computing the cosine distance between input feature and ground truth feature
     *  */
-    inline float cosineDistance(const cv::Mat &v1, const cv::Mat &v2) {
-        double dot = v1.dot(v2);
-        double denom_v1 = norm(v1);
-        double denom_v2 = norm(v2);
-        return dot / (denom_v1 * denom_v2);
+    inline float CosineDistance(const cv::Mat &v1, const cv::Mat &v2) {
+        double dot_product = v1.dot(v2);
+        double norm_v1 = cv::norm(v1);
+        double norm_v2 = cv::norm(v2);
+        return dot_product / (norm_v1 * norm_v2);
     }
+
 
     /**
      * Calculating the turning angle of face
