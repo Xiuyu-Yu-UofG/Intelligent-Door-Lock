@@ -24,3 +24,18 @@ This project uses ncnn as the inference framework to deploy the model, the main 
     [Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
 
 ---
+## Performance
+
+
+
+---
+
+## Dependency
+
+- OpenCV >= 4.0.0 
+
+---
+
+# Social Media
+
+---
