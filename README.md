@@ -20,6 +20,6 @@ This project has implemented both facial recognition and anti-spoofing on a Rasp
 
 -  Anti-Spoofing:
 
-  [Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
+    [Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
 
 ---
