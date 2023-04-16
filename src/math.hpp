@@ -14,12 +14,17 @@ namespace Statistics
     */
     cv::Mat zScore(const cv::Mat &fc) 
     {
-        cv::Mat mean, std;
-        cv::meanStdDev(fc, mean, std);
-        //cout <<"mean is :"<< mean <<"std is :"<< std << endl;
-        cv::Mat fc_norm = (fc - mean) / std;
-        return fc_norm;
+    cv::Mat mean, std;
+    cv::meanStdDev(fc, mean, std);
+
+    // 计算 z-score
+    cv::Mat fc_norm;
+    cv::subtract(fc, mean, fc_norm);  // fc_norm = fc - mean
+    cv::divide(fc_norm, std, fc_norm);  // fc_norm = fc_norm / std
+
+    return fc_norm;
     }
+
 
     /**
     * This module is using to computing the cosine distance between input feature and ground truth feature
