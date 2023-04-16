@@ -36,6 +36,6 @@ This project uses ncnn as the inference framework to deploy the model, the main 
 
 ---
 
-# Social Media
+## Social Media
 
 ---
