@@ -34,6 +34,7 @@ The storage space of the Raspberry Pi is limited, we need to expand the file spa
 $ sudo raspi-config
 ```
 choose'Advanced Options', then click 'expand filesystem' to free up computer storage space
+
 ![expand_system](./picture/expand_system.jpg)
 ### 2.Add swap space SWAP to Raspberry Pi
 Before starting to compile, it is recommended that you increase the swap space. This will allow you to use all four cores of the Raspberry Pi to compile OpenCV without the compilation hanging due to memory exhaustion. Type:
