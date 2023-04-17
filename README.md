@@ -24,43 +24,6 @@ This project uses ncnn as the inference framework to deploy the model, the main 
     [Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
 
 ---
-## Performance
-
-
-https://user-images.githubusercontent.com/53292073/232580126-32e528dd-9edc-4c5a-87d5-7a5e811967f7.mp4
-
-https://user-images.githubusercontent.com/53292073/232581115-4b8f5573-edaf-49e1-a63b-15600a13e8ec.mp4
-
-Faces can be recognized correctly, and real and fake faces can be distinguished.
-
-
----
-
-## Dependency
-
-- OpenCV >= 4.0.0 
-
----
-
-## Adjustable Parameters
-
-1. **largest_face_only:** whether only the largest faces are detected
-2. **record_face:** detects faces every two seconds in the next run and writes them to the img folder as a database
-3. **distance_threshold:** prevents false detection of faces that are too far away
-4. **face_thre:** Face recognition threshold
-5. **true_thre:** threshold for live body detection
-6. **jump:** skip a few frames of face recognition and live detection to speed up the process
-7. **input_width:** set input width 
-8. **input_height:** set input height 
-9. **output_width:** set output width 
-10. **output_height:** set input height
-11. **project_path:** must be set to your own directory
-
-------
-## Object and UI
-![Object](https://user-images.githubusercontent.com/53292073/232586877-f13f32ed-0ef7-4d6d-a4a2-a97fb9cff62a.png)
-
-![UI](https://user-images.githubusercontent.com/53292073/232586916-aa48ae67-ea54-4666-9793-996e22e44cfe.png)
 
 ## Installation Environment Configuration
 ### 1.Expand the file system of Raspberry Pi
@@ -116,6 +79,46 @@ cmake -DCMAKE_BUILD_TYPE=Release -DOPENCV_GENERATE_PKGCONFIG=ON -DCMAKE_INSTALL_
 sudo make
 sudo make install
 ```
+
+## Performance
+
+
+https://user-images.githubusercontent.com/53292073/232580126-32e528dd-9edc-4c5a-87d5-7a5e811967f7.mp4
+
+https://user-images.githubusercontent.com/53292073/232581115-4b8f5573-edaf-49e1-a63b-15600a13e8ec.mp4
+
+Faces can be recognized correctly, and real and fake faces can be distinguished.
+
+
+---
+
+## Dependency
+
+- OpenCV >= 4.0.0 
+
+---
+
+## Adjustable Parameters
+
+1. **largest_face_only:** whether only the largest faces are detected
+2. **record_face:** detects faces every two seconds in the next run and writes them to the img folder as a database
+3. **distance_threshold:** prevents false detection of faces that are too far away
+4. **face_thre:** Face recognition threshold
+5. **true_thre:** threshold for live body detection
+6. **jump:** skip a few frames of face recognition and live detection to speed up the process
+7. **input_width:** set input width 
+8. **input_height:** set input height 
+9. **output_width:** set output width 
+10. **output_height:** set input height
+11. **project_path:** must be set to your own directory
+
+------
+## Object and UI
+![Object](https://user-images.githubusercontent.com/53292073/232586877-f13f32ed-0ef7-4d6d-a4a2-a97fb9cff62a.png)
+
+![UI](https://user-images.githubusercontent.com/53292073/232586916-aa48ae67-ea54-4666-9793-996e22e44cfe.png)
+
+
 ## Social Media
 >[Our Youtube Channel! Click here to follow.](https://www.youtube.com/channel/UCksbdr3oxr3xwcaTyatUlkw)   
 >[Our Twitter! Click here to follow.](https://twitter.com/5220SmartLock) 
