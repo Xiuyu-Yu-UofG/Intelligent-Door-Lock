@@ -2,6 +2,7 @@
 This is a group assignment for the course ENG5220: Real Time Embedded Programming (2022-23)
 
 Xiuyu Yu(2798559Y), Wenwei Zheng(2814293Z): Responsible for the design of image recognition.
+
 Xu Feng(2781961F), Zhihong Cheng(2802378C): Responsible for GPIO, UI design.
 
 ## Introduction
