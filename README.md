@@ -1,11 +1,12 @@
 # Intelligent-Door-Lock
 This is a group assignment for the course ENG5220: Real Time Embedded Programming (2022-23)
 
-Wenwei Zheng(2814293Z), Xu Feng(2781961F), Zhihong Cheng(2802378C), Xiuyu Yu(2798559Y)
+Xiuyu Yu(2798559Y), Wenwei Zheng(2814293Z): Responsible for the design of image recognition.
+Xu Feng(2781961F), Zhihong Cheng(2802378C): Responsible for GPIO, UI design.
 
 ## Introduction
 
-This project has implemented both facial recognition and anti-spoofing on a Raspberry Pi, with its model converted to ncnn. In addition, the entire project is designed as an entry protection system, which reads facial images from the img folder and determines whether the input face is in the dataset using Arcface. The most interesting feature is its ability to estimate whether a facial image obtained from a camera is real, relying solely on the input image rather than using human or temperature sensors. As a result, it can avoid being deceived by fake faces, including printed paper photos and electronic device displays.
+This project has implemented both facial recognition and anti-spoofing on a Raspberry Pi, with its model converted to ncnn. In addition, the entire project is designed as an entry protection system, which reads facial images from the img folder and determines whether the input face is in the dataset using Arcface. The most interesting feature is its ability to estimate whether a facial image obtained from a camera is real, relying solely on the input image rather than using human or temperature sensors. As a result, it can avoid being deceived by fake faces, including printed paper photos and electronic device displays. In addition, this smart lock can enter the setting function by entering the password.
 
 This project uses ncnn as the inference framework to deploy the model, the main models used are
 
