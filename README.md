@@ -25,6 +25,7 @@ This project uses ncnn as the inference framework to deploy the model, the main 
 
     [Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
 
+The UI is designed by QT
 ---
 
 ## Installation Environment Configuration
