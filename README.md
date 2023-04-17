@@ -57,7 +57,10 @@ Faces can be recognized correctly, and real and fake faces can be distinguished.
 11. **project_path:** must be set to your own directory
 
 ------
+## Object and UI
+![Object](https://user-images.githubusercontent.com/53292073/232586877-f13f32ed-0ef7-4d6d-a4a2-a97fb9cff62a.png)
 
+![UI](https://user-images.githubusercontent.com/53292073/232586916-aa48ae67-ea54-4666-9793-996e22e44cfe.png)
 
 ## Social Media
 
