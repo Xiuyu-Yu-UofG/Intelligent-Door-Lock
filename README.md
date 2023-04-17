@@ -62,7 +62,7 @@ Faces can be recognized correctly, and real and fake faces can be distinguished.
 
 ![UI](https://user-images.githubusercontent.com/53292073/232586916-aa48ae67-ea54-4666-9793-996e22e44cfe.png)
 
-## Installation environment configuration
+## Installation Environment Configuration
 ### 1.Expand the file system of Raspberry Pi
 The storage space of the Raspberry Pi is limited, we need to expand the file space, first enter in the terminal:
 ```
@@ -117,7 +117,8 @@ sudo make
 sudo make install
 ```
 ## Social Media
-
+>[Our Youtube Channel! Click here to follow.](https://www.youtube.com/channel/UCksbdr3oxr3xwcaTyatUlkw)   
+>[Our Twitter! Click here to follow.](https://twitter.com/5220SmartLock) 
 ---
 
 
