@@ -62,6 +62,60 @@ Faces can be recognized correctly, and real and fake faces can be distinguished.
 
 ![UI](https://user-images.githubusercontent.com/53292073/232586916-aa48ae67-ea54-4666-9793-996e22e44cfe.png)
 
+## Installation environment configuration
+### 1.Expand the file system of Raspberry Pi
+The storage space of the Raspberry Pi is limited, we need to expand the file space, first enter in the terminal:
+```
+$ sudo raspi-config
+```
+![expand_system](./img/expand_system.jpg)
+choose'Advanced Options', then click 'expand filesystem' to free up computer storage space
+### 2.Add swap space SWAP to Raspberry Pi
+Before starting to compile, it is recommended that you increase the swap space. This will allow you to use all four cores of the Raspberry Pi to compile OpenCV without the compilation hanging due to memory exhaustion. Type:
+```
+sudo nano /etc/dphys-swapfile
+```
+to open the file, then edit the CONF_SWAPSIZE variable to 2048 or 1024.
+### 3.The tools and some image and video libraries required to install OpenCV
+#### 3.1 Install the CMake developer tools
+Enter the following command to install build-essential, cmake, git and pkg-config
+```
+sudo apt-get install build-essential cmake git pkg-config 
+```
+#### 3.2 Install Common Image Toolkit: Allows us to load various image file formats from disk
+Enter the following command to install the jpeg format image toolkit
+```
+sudo apt-get install libjpeg8-dev 
+```
+Enter the following command to install the tif format image toolkit
+```
+sudo apt-get install libtiff5-dev 
+```
+Install png image toolkit
+```
+sudo apt-get install libpng12-dev
+```
+#### 3.3 Install common video libraries
+Let us read various video file formats from disk, and use video streams directly
+```
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install libxvidcore-dev libx264-dev
+```
+### 4.Download OpenCV-4.0.0
+```
+wget -O opencv-4.0.0.zip https://github.com/Itseez/opencv/archive/4.0.0.zip
+```
+### 5.Install and compile OpenCV
+```
+# change to your dir
+cd /home/opencv
+
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DOPENCV_GENERATE_PKGCONFIG=ON -DCMAKE_INSTALL_PREFIX=/usr/local ..
+sudo make
+sudo make install
+```
 ## Social Media
 
 ---
