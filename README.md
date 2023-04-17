@@ -27,6 +27,10 @@ This project uses ncnn as the inference framework to deploy the model, the main 
 ## Performance
 
 
+https://user-images.githubusercontent.com/53292073/232580126-32e528dd-9edc-4c5a-87d5-7a5e811967f7.mp4
+
+Faces can be recognized correctly, and real and fake faces can be distinguished.
+
 
 ---
 
